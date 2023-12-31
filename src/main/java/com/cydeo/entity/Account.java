@@ -16,6 +16,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @Table(name = "account_details")
+//@JsonIgnoreProperties(value = {"state", "postalCode"},ignoreUnknown = true)
 @JsonIgnoreProperties(value = {"hibernateLazyInitializer"},ignoreUnknown = true)
 public class Account extends BaseEntity {
 
